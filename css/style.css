@@ -1,0 +1,786 @@
+body {
+  background-image: url(../img/fondo222.jfif);
+  background-size: 2400px;
+  background-position-y: 1550px;
+  --color-purple: #270082;
+  --color-fucsia: rgba(125, 11, 192, 0.55);
+}
+
+/* HEADER */
+.navBar {
+  margin-top: 55px;
+}
+.bg-productos {
+  background-image: url(../img/black-purple-gradient-linear-1920x1080-c2-000000-4b0082-a-90-f-14.svg);
+}
+.button-Products:focus {
+  box-shadow: none;
+}
+.bg-logoclose {
+  background-color: #270082;
+}
+.btn-close {
+  background-image: url(../img/logo-close.png);
+}
+.navbarFixedTop {
+  background-image: url(../img/black-purple-gradient-linear-1920x1080-c2-000000-4b0082-a-90-f-14.svg);
+  background-position-y: 400px;
+}
+.navbar-image {
+  background-image: url(../img/black-purple-gradient-linear-1920x1080-c2-000000-4b0082-a-90-f-14.svg);
+}
+.bg-accordion {
+  background-image: url(../img/black-purple-gradient-linear-1920x1080-c2-000000-4b0082-a-90-f-14.svg);
+  background-position-y: 768px;
+}
+.bg-listGroup {
+  background-color: #7a0bc0;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #270082;
+}
+.accordion-button:focus {
+  background-color: #270082;
+}
+.accordion-button::after {
+  background-image: url(../img/logo-canva.png);
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../img/logo-canvaClick.png);
+}
+.list-group a:hover {
+  background-color: #4f037e;
+}
+.list-group a:focus {
+  background-color: #4f037e;
+}
+.logoPagina {
+  width: 130px;
+  height: 130px;
+}
+.logoPagina:hover {
+  filter: grayscale(30%);
+}
+.logo-toggler {
+  height: 50px;
+}
+.navbar-toggler {
+  color: rgba(125, 11, 192, 0.55);
+}
+.navBuscar {
+  margin-bottom: 10px;
+}
+.button-search:focus {
+  background-color: var(--color-fucsia);
+  color: white;
+}
+.bg-button {
+  color: var(--color-fucsia);
+  border-color: var(--color-fucsia);
+}
+.logoUsuario {
+  margin-right: 5px;
+  padding-top: 3px;
+  height: 23px;
+}
+.link-Usuario {
+  padding-top: 0px;
+}
+.link-Usuario:hover {
+  color: #fa58b6;
+}
+.nav-Usuario {
+  margin-bottom: 10px;
+}
+.logoCrearCuenta {
+  margin-right: 5px;
+  height: 20px;
+}
+.link-CrearCuenta {
+  padding-top: 0px;
+}
+.link-CrearCuenta:hover {
+  color: #fa58b6;
+}
+.link-Carrito:hover {
+  color: #fa58b6;
+}
+.nav-Carrito {
+  margin-left: 1px;
+}
+.logoCarrito {
+  width: 20px;
+}
+.icon-cero {
+  height: 25px;
+}
+/* MAIN */
+/* CAROUSEL */
+.slide img {
+  height: 25vh;
+}
+/* TIPOS DE PRODUCTOS */
+.firstCol,
+.secondCol,
+.thirdCol,
+.fourthCol,
+.fiveCol,
+.sixCol {
+  width: 204px;
+  padding-left: 0px;
+}
+.bg-cards-tipos {
+  background-image: url(../img/black-purple-gradient-linear-1920x1080-c2-000000-4b0082-a-90-f-14.svg);
+  background-position-y: 2940px;
+}
+.cardJuegos::before,
+.cardFunko::before,
+.cardHeadsets::before,
+.cardAccesorios::before,
+.cardSillaGamer::before,
+.cardCompraOnline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: var(--color-purple);
+  transition: transform 300ms ease-in-out;
+  transform: scaleX(0);
+}
+.cardJuegos,
+.cardFunko,
+.cardHeadsets,
+.cardAccesorios,
+.cardSillaGamer,
+.cardCompraOnline {
+  z-index: 1;
+}
+.cardJuegos:hover:before,
+.cardFunko:hover:before,
+.cardHeadsets:hover:before,
+.cardAccesorios:hover:before,
+.cardSillaGamer:hover:before,
+.cardCompraOnline:hover:before {
+  transform: scaleX(1);
+}
+.cardJuegos:focus:before,
+.cardFunko:focus:before,
+.cardHeadsets:focus:before,
+.cardAccesorios:focus:before,
+.cardSillaGamer:focus:before,
+.cardCompraOnline:focus:before {
+  transform: scaleX(1);
+}
+.img-juegos,
+.img-funkos,
+.img-headsets,
+.tecladoMouse {
+  width: 217px;
+}
+.cardJuegos,
+.cardFunko,
+.cardHeadsets,
+.cardAccesorios {
+  width: 217px;
+}
+/* PRODUCTOS */
+.fondo-black {
+  background-color: black;
+}
+.titulo {
+  font-family: "Balsamiq Sans", cursive;
+}
+.colorTitulo {
+  color: #7a0bc0;
+}
+.fondo-titulo {
+  background-image: url(../img/black-purple-gradient-linear-1920x1080-c2-000000-4b0082-a-90-f-14.svg);
+  background-position-y: 2940px;
+}
+.logo-view {
+  height: 30px;
+}
+.carrito-purple {
+  height: 20px;
+  margin-right: 4px;
+}
+.color-enlace {
+  color: #7a0bc0;
+}
+.text-Cards {
+  color: #7a0bc0;
+}
+.text-Cards:hover {
+  color: #fa58b6;
+}
+.fondo-cardBody {
+  background-image: url(../img/black-purple-gradient-linear-1920x1080-c2-000000-4b0082-a-90-f-14.svg);
+  background-position-y: 3040px;
+}
+.cardHover:hover {
+  width: 200px;
+}
+.camara-ps5 {
+  margin-top: 37px;
+  margin-bottom: 38px;
+}
+.dualSense {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.valhalla {
+  margin-top: 36px;
+  margin-bottom: 38px;
+}
+.spiderman {
+  margin-top: 46px;
+  margin-bottom: 47px;
+}
+.teclado {
+  margin-top: 28px;
+  margin-bottom: 47px;
+}
+.mouse {
+  margin-top: 31px;
+  margin-bottom: 46px;
+}
+.button-products {
+  background-image: url(../img/black-purple-gradient-linear-1920x1080-c2-000000-4b0082-a-90-f-14.svg);
+  background-position-y: 3040px;
+  color: #7a0bc0;
+  margin-bottom: 30px;
+}
+.button-products:hover {
+  color: #fa58b6;
+}
+/* Seccion Nosotros */
+.image-nosotros {
+  width: auto;
+  height: 1125px;
+  background-image: url(../img/fondo-nosotros.jpg);
+  background-position-y: 1040px;
+  background-position-x: 1200px;
+}
+.ultimas-novedades {
+  background-color: black;
+  color: #7a0bc0;
+}
+.form-control {
+  width: 60%;
+}
+.fondo-button {
+  background-color: #7a0bc0;
+}
+/* Seccion Marcas */
+.marcas {
+  background-image: url(../img/black-purple-gradient-linear-1920x1080-c2-000000-4b0082-a-90-f-14.svg);
+  background-size: 3000px;
+}
+.logoPlay,
+.logoEA,
+.logoBandai,
+.logoKonami,
+.logoUbisoft,
+.logoWarner {
+  width: 300px;
+}
+.logoPlay,
+.logoEA,
+.logoKonami,
+.logoBandai,
+.logoUbisoft,
+.logoWarner {
+  filter: brightness(300%);
+}
+.logoPlay,
+.logoEA,
+.logoBandai,
+.logoKonami,
+.logoUbisoft,
+.logoWarner {
+  transition: all 1s linear;
+}
+.logoPlay:hover,
+.logoEA:hover,
+.logoKonami:hover,
+.logoBandai:hover,
+.logoUbisoft:hover,
+.logoWarner:hover {
+  filter: brightness(900%);
+}
+/* FOOTER */
+footer {
+  width: 100%;
+  height: 100%;
+  font-family: Popins, sans-serif;
+}
+
+.cuerpo-footer {
+  margin: 0 auto;
+  background: #1a1a40;
+  width: 100%;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.columnas-cuerpo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col {
+  margin-bottom: 35px;
+  color: white;
+}
+
+/*Redes Sociales*/
+
+.red-social {
+  display: inline-block;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.red-social img {
+  width: 30px;
+  height: 30px;
+}
+
+/*Columna de Navegacion y Medios de Pagos*/
+.navegacion {
+  display: flex;
+  flex-direction: column;
+}
+
+.navegacion ul {
+  list-style: none;
+  padding-top: 15px;
+}
+
+.navegacion a {
+  text-decoration: none;
+  color: white;
+}
+
+.navegacion ul li {
+  margin-bottom: 10px;
+}
+
+.col h4 {
+  font-size: 20px;
+  font-weight: 700px;
+  margin-bottom: 26px;
+}
+
+.medios-pagos {
+  margin-bottom: 20px;
+}
+
+.medios-pagos img,
+.medios-envios img {
+  width: 32;
+  height: 20px;
+}
+
+/*Sector de Newsletter con Formulario*/
+.campo-formulario {
+  display: flex;
+  height: 42px;
+  margin-top: 20px;
+  width: 90%;
+}
+
+.campo-formulario input {
+  padding: 10px 8px;
+  width: 90%;
+  font-size: 16px;
+  color: aliceblue;
+  background-color: #4f4f52;
+  border: none;
+}
+
+#botonEnviar {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 20px 0;
+  border: 2px solid #fa58b6;
+  color: white;
+  background-color: #fa58b6;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+/*Sector de Contactos*/
+.datos-contacto li {
+  list-style: none;
+  padding-top: 15px;
+}
+
+.datos-contacto a {
+  text-decoration: none;
+  color: white;
+}
+
+/*Sector del mapa*/
+.mapa {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+/*Parte final del Footer donde esta el Copyright*/
+.pie-footer {
+  display: flex;
+  text-align: center;
+  background-color: #270082de;
+  padding: 40px 5px;
+}
+
+.fila {
+  color: aliceblue;
+  margin: 0 auto;
+}
+
+/*Simbolo flotante de WhatsApp*/
+footer .logo-whatsapp {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+}
+footer .icon-whats:hover {
+  width: 50px;
+}
+/*Simbolo flotante del Chat*/
+footer .logo-chat {
+  position: fixed;
+  bottom: 60px;
+  left: 20px;
+}
+footer .icon-chat:hover {
+  width: 70px;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 425px) {
+  .img-juegos,
+  .img-funkos,
+  .img-headsets,
+  .tecladoMouse {
+    width: 276px;
+  }
+  .firstCol,
+  .secondCol,
+  .thirdCol,
+  .fourthCol,
+  .fiveCol,
+  .sixCol {
+    width: 264px;
+  }
+  .cardJuegos,
+  .cardFunko,
+  .cardHeadsets,
+  .cardAccesorios {
+    width: 276px;
+  }
+  .logoPlay,
+  .logoEA,
+  .logoBandai,
+  .logoKonami,
+  .logoUbisoft,
+  .logoWarner {
+    width: 352px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbarFixedTop {
+    background-image: url(../img/black-purple-gradient-linear-1920x1080-c2-000000-4b0082-a-90-f-14.svg);
+    background-position-y: 400px;
+  }
+  .navbar-image {
+    background-image: url(../img/black-purple-gradient-linear-1920x1080-c2-000000-4b0082-a-90-f-14.svg);
+  }
+  .link-Usuario {
+    display: flex;
+    padding-top: 9px;
+  }
+  .link-CrearCuenta {
+    display: flex;
+    padding-top: 9px;
+  }
+  .link-Carrito {
+    display: flex;
+    padding-top: 9px;
+  }
+  .slide img {
+    height: auto;
+  }
+  .tecladoMouse {
+    height: 178px;
+  }
+  .logoCarrito {
+    height: 26px;
+  }
+  .logo-view {
+    margin-right: 17px !important;
+  }
+  .camara-ps5 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .valhalla {
+    margin: 0px;
+  }
+  .spiderman {
+    margin-bottom: 29px;
+  }
+  .teclado {
+    margin-bottom: 38px;
+  }
+  .mouse {
+    margin-bottom: 33px;
+  }
+  .cardHover:hover {
+    width: 180px;
+  }
+  .tipos-Productos .row {
+    margin-top: 22px;
+  }
+  .image-nosotros {
+    width: auto;
+    height: 250px;
+    background-image: url(../img/fondo-nosotros.jpg);
+    background-position-y: 740px;
+    background-position-x: 1800px;
+  }
+  .iconosGroup {
+    display: flex;
+    flex-direction: row !important;
+    padding-top: 35px;
+  }
+  .img-icon1,
+  .img-icon2,
+  .img-icon3,
+  .img-icon4,
+  .img-icon5 {
+    width: 137px;
+    height: 147px;
+  }
+  .logoPlay,
+  .logoEA,
+  .logoKonami,
+  .logoBandai,
+  .logoUbisoft,
+  .logoWarner {
+    width: 350px;
+  }
+  .cuerpo-footer {
+    height: 100%;
+    padding-left: auto;
+    padding-right: auto;
+  }
+
+  .columnas-cuerpo {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .col {
+    margin-right: 30px;
+  }
+
+  #col-redes-sociales {
+    display: flex;
+  }
+
+  .campo-formulario input {
+    width: 70%;
+  }
+}
+@media (min-width: 992px) {
+  .navbarFixedTop {
+    background-image: url(../img/black-purple-gradient-linear-1920x1080-c2-000000-4b0082-a-90-f-14.svg);
+    background-position-y: 400px;
+  }
+  .navbar-image {
+    background-image: url(../img/black-purple-gradient-linear-1920x1080-c2-000000-4b0082-a-90-f-14.svg);
+  }
+  .navbar-Nav {
+    display: flex;
+    justify-content: end;
+  }
+  .link-Carrito {
+    padding-top: 9px;
+  }
+  .link-Usuario {
+    padding-left: 19px !important;
+  }
+  .slide img {
+    height: auto;
+  }
+  .tipos-Productos .row {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 70px;
+  }
+  .spiderman {
+    margin-bottom: 62px;
+  }
+  .camara-ps5 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .teclado {
+    margin-bottom: 59px;
+  }
+  .mouse {
+    margin-bottom: 59px;
+  }
+  .dualSense {
+    margin-bottom: 38px;
+  }
+  .cardHover:hover {
+    width: 250px;
+  }
+  .img-icon1,
+  .img-icon2,
+  .img-icon3,
+  .img-icon4,
+  .img-icon5 {
+    width: 157px;
+    height: 167px;
+  }
+  .logoPlay,
+  .logoEA,
+  .logoKonami,
+  .logoBandai,
+  .logoUbisoft,
+  .logoWarner {
+    width: 440px;
+  }
+}
+@media (min-width: 1200px) {
+  .navbarFixedTop {
+    background-image: url(../img/black-purple-gradient-linear-1920x1080-c2-000000-4b0082-a-90-f-14.svg);
+    background-position-y: 400px;
+  }
+  .navbar-image {
+    background-image: url(../img/black-purple-gradient-linear-1920x1080-c2-000000-4b0082-a-90-f-14.svg);
+  }
+  .slide img {
+    height: auto;
+  }
+  .fiveCol,
+  .sixCol {
+    display: block !important;
+  }
+  .silla-gamer {
+    height: 186px;
+  }
+  .dualSense {
+    margin-bottom: 63px;
+  }
+  .camara-ps5 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .spiderman {
+    margin-top: 75px;
+    margin-bottom: 78px;
+  }
+  .teclado {
+    margin-top: 54px;
+    margin-bottom: 72px;
+  }
+  .mouse {
+    margin-top: 61px;
+    margin-bottom: 67px;
+  }
+  .cardHover:hover {
+    width: 300px;
+  }
+  .img-icon1,
+  .img-icon2,
+  .img-icon3,
+  .img-icon4,
+  .img-icon5 {
+    width: 167px;
+    height: 177px;
+  }
+  .logoPlay,
+  .logoEA,
+  .logoKonami,
+  .logoBandai,
+  .logoUbisoft,
+  .logoWarner {
+    width: 560px;
+  }
+}
+@media (min-width: 1400px) {
+  .slide img {
+    height: auto;
+  }
+  .firstCol {
+    width: 343px;
+  }
+  .secondCol {
+    width: 343px;
+  }
+  .thirdCol {
+    width: 373px;
+  }
+  .fourthCol {
+    width: 343px;
+  }
+  .fiveCol {
+    width: 332px;
+  }
+  .sixCol {
+    width: 373px;
+  }
+  .img-juegos,.cardJuegos{
+    width: 343px;
+  }
+  .img-funkos,.cardFunko{
+    width: 325px;
+  }
+  .img-headsets,.cardHeadsets{
+    width: 373px;
+  }
+  .tecladoMouse {
+    width: 343px;
+    height: 245px;
+  }
+  .cardAccesorios{
+    width: 343px;
+  }
+  .silla-gamer{
+    width: 329px;
+    height: 248px;
+  }
+  .cardSillaGamer{
+    width: 329px;
+  }
+  .logoPlay,
+  .logoEA,
+  .logoKonami,
+  .logoBandai,
+  .logoUbisoft,
+  .logoWarner {
+    width: 620px;
+  }
+  .cardHover:hover {
+    width: 350px;
+  }
+}
+@media (min-width: 1440px) {
+  .slide img {
+    height: auto;
+  }
+}
